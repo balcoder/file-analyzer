@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  .container
+      // header
+      .header
+        h1 Api and Microservices Project - File Metadata Microservice
+        p
+          | With a
+          b responsive
+          |  form.
+      .main
+        h3
+          | User Stories
+        ol
+          li I can submit a form object that includes a file upload.
+          li
+            | The from file input field has the "name" attribute set to "upfile". We rely on this in testing.
+          li
+            | When I click analyze, I will receive the file name, and size in bytes within the JSON response.
+        h3
+          | Usage:
+        p
+          | Click on Choose file and select the file you want the meta data on. Then click  analyze.
+        form(action='/api/fileanalyse', method='post', enctype='multipart/form-data')
+          .row
+            .col-25
+              label(for='fname') First Name
+            .col-75
+              input#fname(type='text', name='firstname', placeholder='Your name..Optional')
+          .row
+            .col-25
+              label(for='lname') Sir Name
+            .col-75
+              input#lname(type='text', name='lastname', placeholder='Your last name..Optional')
+          .row
+            .col-100
+              label.custom-file-upload(for='inputfield') Select File
+              input#inputfield(type='file', name='upfile')
+          .row
+            .col-100
+              input#button(type='submit', value='Analyze')
+      .footer
