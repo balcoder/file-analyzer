@@ -13,4 +13,4 @@ With a **responsive** form.
 
 Click on Choose file and select the file you want the meta data on. Then click analyze.
 
-![alt screenshot of app](https://github.com/balcoder/file-analyser/raw/master/public/images/screenshot.png)
+![alt screenshot of app](https://github.com/balcoder/file-analyzer/raw/master/public/images/screenshot.png)
