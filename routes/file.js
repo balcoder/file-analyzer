@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-// require and use "multer"...
+// require and use "multer"...Multer is a node.js middleware for handling
+// multipart/form-data, which is primarily used for uploading files.
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
 
