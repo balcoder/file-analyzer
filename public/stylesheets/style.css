@@ -13,14 +13,9 @@ body {
 
 .container {
   margin: auto;
-    width: 50%;
-    border: 3px solid green;
-    padding: 10px;
-
-}
-
-.footer {
-	margin-top: 60px;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 ol {
@@ -50,20 +45,23 @@ label {
 
 input[type=submit],[type=file] {
     background-color: #4CAF50;
+		font-size: 16px;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  width: 100%;
+  	width: 100%;
 }
 
 input[type=submit]:hover,[type=file]:hover {
   background-color: #45a049;
+	font-weight: bold;
 }
 
-/* Styling file inputs */
+/* Don't display the default input type of file as we will style the label
+* and fill in our id in the for attribute making it clickable  */
 input[type="file"] {
     display: none;
 }
@@ -80,6 +78,7 @@ input[type="file"] {
 }
 .custom-file-upload:hover {
   background-color: #45a049;
+	font-weight: bold;
 }
 
 .container {
@@ -87,7 +86,7 @@ input[type="file"] {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
+/* cols for label and input field */
 .col-25 {
   float: left;
   width: 25%;
@@ -112,7 +111,7 @@ input[type="file"] {
     display: table;
     clear: both;
 }
-
+/* make cols 100% for tab and mobile */
 @media screen and (max-width: 800px) {
     .col-25, .col-75, input[type=submit] {
         width: 100%;
